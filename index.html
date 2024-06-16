@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nothing+You+Could+Do&family=Poppins:wght@300&display=swap" rel="stylesheet">
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin/>
+     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script> --> 
+</head>
+<body>
+    <header>
+        <div class="container top-header">       
+            <a href="/" class="logo">
+                <!-- <img src="img/pizza1_orange.png" alt="logo"> -->
+                <span class="logo_s1">Pizza</span><br><span class="logo_s2">DELICIOUS</span>
+            </a> 
+            <nav>
+                <div class="nav-bar">
+                <button class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Contact</a>
+                </div>
+            </nav>
+            </div>
+    </header>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/bg_1.jpg" alt="image" class="image">
+                <div class="image-date">
+                <div class="description">
+                    <p class="title_1 anim">Delicious</p>
+                    <p class="title_2 anim">ITALIAN CUIZINE</p>
+                    <P class="title_4 anim">A small river named Duden flows by their place and supplies <br> it with the necessary regelialia.</P>
+                    <button class="btn_1 anim">Order Now</button>
+                    <button class="btn_2 anim">View Menu</button>
+                </div>
+                <img src="img/bg_1.png" alt="image">
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="img/bg_1.jpg" alt="image" class="image">
+                <div class="image-date_2">
+                <img src="img/bg_2.png" alt="image">
+                <div class="description_2">
+                    <p class="title_1">Crunchy</p>
+                    <p class="title_2">ITALIAN PIZZA</p>
+                    <P class="title_4">A small river named Duden flows by their place and supplies <br> it with the necessary regelialia.</P>
+                    <button class="btn_1">Order Now</button>
+                    <button class="btn_2">View Menu</button>
+                </div>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="img/bg_3.jpg" alt="image" class="image">
+                <div class="image-date_3">
+                <div class="description_3">
+                    <p class="title_1">Welcome</p>
+                    <p class="title_2">WE COOKED YOUR DESIRED</p>
+                    <p class="title_3">PIZZA RECIPE</p> 
+                    <p class="title_4">A small river named Duden flows by their place and supplies it with the <br> necessary regelialia.</p>
+                    <button class="btn_1">Order Now</button>
+                    <button class="btn_2">View Menu</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <section class="about">
+        <div class="content grid">
+        <div class="contacts">
+            <ul class="telephone anim">
+                <li>000 (123) 456 7890</li>
+                <li><span>A small river named Duden flows</span></li>
+            </ul>
+            <ul class="adress anim">
+                <li>198 West 21th Street</li>
+                <li><span>Suite 721 New York NY 10016</span></li>
+            </ul>
+            <ul class="schedule anim">
+                <li>Open Monday-Friday</li>
+                <li><span>8:00am-9:00pm</span></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <img src="img/twitter-white.png" class="anim" alt="twitter">
+            <img src="img/facebook_white.png" class="anim" alt="facebook">
+            <img src="img/instagram_white.png" class="anim" alt="instagram">
+        </div>
+        <div class="bg-image"><img src="img/about.jpg" alt="image"></div>
+        <div class="bg-image-txt"><p class="title___ anim">WELCOME TO <span class="bg-pizza anim">PIZZA</span> A RESTAURANT</p><p class="fish-text">On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+        it would have been rewritten a thousand times and everything that was left from it's origin would be the word "and" and The Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers
+        ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p></div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services_title">
+        <h2 class="anim">OUR SERVICES</h2>
+        <p class="anim">>Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="img/diet.png" class="anim" alt="diet">
+                <p class="anim">HEALTHY FOODS</p>
+                <span class="anim">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</span>
+            </div>
+            <div class="card">
+                <img src="img/bicycle.png" class="anim" alt="bicycle">
+                <p class="anim">FASTEST DELIVERY</p>
+                <span>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</span>
+            </div>
+            <div class="card">
+                <img src="img/pizza1.png" class="anim" alt="pizza">
+                <p class="anim">ORIGINAL RECIPES</p>
+                <span class="anim">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</span>
+            </div>
+        </div>
+    </section>
+    <section class="home1">
+        <div class="overflow_grid">
+            <img src="img/gallery-1.jpg" alt="gallery1">
+            <img src="img/gallery-2.jpg" alt="gallery2">
+            <img src="img/gallery-3.jpg" alt="gallery3">
+            <img src="img/gallery-4.jpg" alt="gallery4">
+        </div>
+    </section>
+    <section class="home1 home234" data-stellar-background-ratio="0.5">
+    <div class="cover-div"></div>
+        <!-- <img src="img/bg_2.jpg" alt="image" class="img1"> -->
+        <div class="overflow_cards">
+            <div>
+                <img src="img/pizza1_orange.png" class="anim" alt="pizza">
+                <p class="anim">100</p>
+                <span class="anim">Pizza Branches</span>
+            </div>
+            <div>
+                <img src="img/laugh_orange2.png" class="anim" alt="laugh">
+                <p class="anim">85</p>
+                <span class="anim">Number of Awards</span>
+            </div>
+            <div>
+                <img src="img/laugh_orange.png" class="anim" alt="laugh">
+                <p class="anim">10,567</p>
+                <span class="anim">Happy Customer</span>
+            </div>
+            <div>
+                <img src="img/chef_orange.png" class="anim" alt="chef">
+                <p class="anim">900</p>
+                <span class="anim">Staff</span>
+            </div>
+        </div>
+    </section>
+    <section class="home2">
+        <img src="img/about.jpg" class="side_img" alt="about" >
+        <div class="wrapper">
+        <div class="buttons">
+            <button class="active" data-name="pizza">Pizza</button>
+            <button data-name="drinks">Drinks</button>
+            <button data-name="burgers">Burgers</button>
+            <button data-name="pasta">Pasta</button>
+        </div>
+        <div class="slider-home">
+            <div class="slider_cards">
+                <div data-name="pizza">
+                    <img src="img/pizza-1.jpg" alt="pizza" class="pizza_1 anim">
+                    <p class="name anim">Itallian Pizza</p>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price anim">$2.90</p>
+                    <button class="anim">Add to cart</button>
+                </div>
+                <div data-name="pizza">
+                    <img src="img/pizza-2.jpg" alt="pizza" class="pizza_1 anim">
+                    <p class="name anim">Itallian Pizza</p>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price anim">$2.90</p>
+                    <button class="anim">Add to cart</button>
+                </div>
+                <div data-name="pizza">
+                    <img src="img/pizza-3.jpg" alt="pizza" class="pizza_1 anim">
+                    <p class="name anim">Itallian Pizza</p>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price anim">$2.90</p>
+                    <button class="anim">Add to cart</button>
+                </div>
+                <div data-name="drinks">
+                    <img src="img/drinks-1.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Drinks</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="drinks">
+                    <img src="img/drinks-4.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Drinks</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="drinks">
+                    <img src="img/drinks-5.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Drinks</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="burgers">
+                    <img src="img/burger-1.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Burger</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="burgers">
+                    <img src="img/burger-2.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Burger</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="burgers">
+                    <img src="img/burger-4.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Burger</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="pasta">
+                    <img src="img/pasta-4.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Pasta</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="pasta">
+                    <img src="img/pasta-5.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Pasta</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+                <div data-name="pasta">
+                    <img src="img/pasta-6.jpg" alt="pizza" class="pizza_1">
+                    <p class="name">Pasta</p>
+                    <p class="descr">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <p class="price">$2.90</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="menu">
+        <div id="menu"><h2 class="anim">HOT PIZZA MEALS</h2>
+        <p class="anim">Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts.</p></div>
+        <div class="pizza-menu-cards">
+            <div class="animation"><img src="img/pizza-1.jpg" alt="pizza"></div>
+            <div class="pizza-description">
+                <span class="item_1 anim">Itallian Pizza</span>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="inline anim"><p class="price anim">$2.90</p>
+                    <button class="anim">Order</button></div>
+            </div>
+            <div class="animation"><img src="img/pizza-2.jpg" alt="pizza"></div>
+            <div class="pizza-description">
+                <span class="item_1 anim">Greek Pizza</span>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="inline anim"><p class="price anim">$2.90</p>
+                    <button class="anim">Order</button></div>
+            </div>
+            <div class="animation"><img src="img/pizza-3.jpg" alt="pizza" class="adaptive_img2"></div>
+            <div class="pizza-description adaptive_2">
+                <span class="item_1 anim">Caucasian Pizza</span>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="inline anim"><p class="price anim">$2.90</p>
+                    <button class="anim">Order</button></div>
+            </div>
+            <div class="pizza-description">
+                <span class="item_1 anim">American Pizza</span>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="inline anim"><p class="price anim">$2.90</p>
+                    <button class="anim">Order</button></div>
+            </div>
+            <div class="animation"><img src="img/pizza-4.jpg" alt="pizza"></div>
+            <div class="pizza-description adaptive_3">
+                <span class="item_1 anim">Tomatoe Pie</span>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="inline anim"><p class="price anim">$2.90</p>
+                    <button class="anim">Order</button></div>
+            </div>
+            <div class="animation"><img src="img/pizza-5.jpg" alt="pizza" class="adaptive_img3"></div>
+            <div class="pizza-description adaptive_4">
+                <span class="item_1 anim">Margherita</span>
+                    <p class="descr anim">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="inline anim"><p class="price anim">$2.90</p>
+                    <button class="anim">Order</button></div>
+            </div>
+            <div class="animation"><img src="img/pizza-6.jpg" alt="pizza" class="adaptive_img4"></div>
+        </div>
+    </section>
+    <section class="menu_2">
+        <div id="menu_2"><h2 class="anim">OUR MENU PRICING</h2>
+            <div class="square"><div class="line"></div><div class="sq1"></div><div class="sq2"></div><div class="sq1"></div><div class="line"></div></div>
+            <p class="anim">Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts.</p></div>
+            <div class="menu_pricing">
+            <div class="menu_pricing_card">
+                <img src="img/pizza-1.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Italian Pizza <span class="anim">$20.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-2.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Hawaiian Pizza <span class="anim">$29.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-3.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Greek Pizza <span class="anim">$20.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-4.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Bacon Crispy Thins <span class="anim">$20.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-5.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Hawaiian Special <span class="anim">$49.91</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-6.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Ultimate Overload <span class="anim">$20.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-7.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Bacon Pizza <span class="anim">$20.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            <div class="menu_pricing_card">
+                <img src="img/pizza-8.jpg" class="anim" alt="">
+                <ul>
+                    <li class="name anim">Ham & Pineapple <span class="anim">$20.00</span></li>
+                    <li class="description anim">A small river named Duden flows by their place and supplies</li>
+                </ul>
+            </div>
+            </div>
+    </section>
+    <section class="blog">
+        <div id="blog"><h2 class="anim">RECENT FROM BLOG</h2>
+            <p class="anim">Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts.</p></div>
+        <div class="blog_cards">
+            <div>
+                <img src="img/image_1.jpg" alt="img" class="anim">
+                <p id="p1">Sept 10,2020 Admin <span>3</span></p>
+                <span id="p2" class="anim">The Delicious Pizza</span>
+                <p id="p3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+            <div>
+                <img src="img/image_2.jpg" alt="img" class="anim">
+                <p id="p1">Sept 10,2020 Admin <span>3</span></p>
+                <span id="p2" class="anim">The Delicious Pizza</span>
+                <p id="p3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+            <div>
+                <img src="img/image_3.jpg" alt="img" class="anim">
+                <p id="p1">Sept 10,2020 Admin <span>3</span></p>
+                <span id="p2" class="anim">The Delicious Pizza</span>
+                <p id="p3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+        </div>
+    </section>
+    <section class="_form">
+        <div class="elements">
+            <div id="map2"></div>
+            <div id="form">
+                <form action="#">
+                    <h2 class="form_h2 anim">Contact Us</h2>
+                    <div class="form_content">
+                    <div class="input-box">
+                       <label for="firstName" class="anim">First Name</label>
+                       <input type="text" id="firstName" required> 
+                    </div>
+                    <div class="input-box">
+                        <label for="lastName" class="anim">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="message" class="anim">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="2"></textarea>
+                    </div>
+                    </div>
+                    <input type="submit" value="Send" class="input_submit anim">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+           <blockquote class="footer__blockquote">
+            <h5>ABOUT US</h5>
+            <p class="footer__blockquote-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <ul class="footer__blockquote-social-list">
+                <li class="footer__blockquote-social-item anim"><a class="footer__blockquote-social-link" target="_blank" href="https://twitter.com/?lang=ua"><img src="img/twitter-white.png" alt="twitter"></a></li>
+                <li class="footer__blockquote-social-item anim"><a class="footer__blockquote-social-link" target="_blank" href="https://uk-ua.facebook.com/"><img src="img/facebook_white.png" alt="facebook"></a></li>
+                <li class="footer__blockquote-social-item anim"><a class="footer__blockquote-social-link" target="_blank" href="https://www.instagram.com/"><img src="img/instagram_white.png" alt="instagram"></a></li>
+            </ul>
+           </blockquote>
+           <div class="footer__blog">
+            <h5>RECENT BLOG</h5>
+            <div class="footer__blog__card">
+                <a href="blog-single.html"><img src="img/image_1.jpg" alt="img"></a>
+                <ul class="footer__blog__list">
+                    <li class="footer__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="footer__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+            <div class="footer__blog__card">
+                <a href="blog-single.html"><img src="img/image_2.jpg" alt="img"></a>
+                <ul class="footer__blog__list">
+                    <li class="footer__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="footer__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+           </div>
+           <ul class="footer__services servadapt">
+              <li class="footer__services-title">SERVICES</li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Cooked</a></li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Deliver</a></li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Quality Foods</a></li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Mixed</a></li>
+           </ul>
+           <ul class="footer__services adaptive">
+            <li class="footer__services-title">HAVE A QUESTIONS?</li>
+            <li class="footer__services-contacts">
+                <a class="footer__services-adress" target="_blank" href="https://maps.app.goo.gl/yZZcuPe7K9kwqKSP9">203 Fake St.Mountain View, San Francisco, California, USA</a>
+                <a class="footer__services-phone" href="tel:+23923929210">+2 392 3929 210</a>
+                <a class="footer__services-mail" href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </li>
+         </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          effect: "fade",
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <script src="jquery-2.0.2.js"></script>
+      <script src="jquery.stellar.js"></script>
+      <script src="script.js"></script>
+      <script src="map.js"></script>
+</body>
+</html>

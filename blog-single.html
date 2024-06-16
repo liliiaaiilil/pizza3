@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nothing+You+Could+Do&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .imade-date_3 .description_3 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .description_3 div span.subtitle{
+        font-family: 'Josefin Sans';
+        font-size: 13px;
+        font-weight: light;
+        color: aliceblue;
+        margin: 0 5px 0 5px;
+       }
+       .wrapper,
+       .slide {
+        margin-right: 0px;
+       }
+       main{
+        height: 100%;
+        max-width: 100vw;
+        overflow: visible;
+        padding: 70px 0;    
+        }
+        .main-wrapper{
+        width: fit-content;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 730px 300px;
+        grid-template-rows: 1fr;
+        column-gap: 55px;
+        grid-template-areas: 
+	    "blog-single aside";
+        }
+        /* .blog-single{
+        max-width: 730px;
+        margin-right: 25px;
+        } */
+        .blog-single h2{
+        margin-top: 50px;
+        font-family: 'Josefin Sans';
+        color: aliceblue;
+        letter-spacing: normal;
+        font-weight: lighter;
+        font-size: 32px;
+        }
+        .blog-single p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: lightgrey;
+        opacity: 0.4;
+        line-height: 28px;
+        margin: 15px 0;
+        }
+        .blog-single .img-food_1{
+            display: block;
+            height: 633px;
+            width: 730px;
+        }
+        .blog-single .img-food_2{
+            display: block;
+            height: 570px;
+            width: 730px;
+        }
+        div.tag__cloud{
+            margin-top: 40px;
+        }
+        div.tag__cloud button, .tag__cloud_2 button{
+        margin-right: 8px;
+        margin-bottom: 10px;
+        padding: 5px 8px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(211, 211, 211, 0.7);
+        font-size: 11px;
+        /* opacity: 0.4; */
+        border: 1px solid #bf7e06;
+        text-align: center;
+        border-radius: 10%;
+        transition: all 0.4s ease 0s;
+        }
+        div.tag__cloud button:hover, .tag__cloud_2 button:hover{
+        border: 1px solid black;
+        transition: all 0.4s ease 0s;
+       }
+       .card___chef{
+        margin-top: 40px;
+        margin-bottom: 100px;
+        display: flex;
+       }
+       .card___chef img{
+        height: 140px;
+        width: 140px;
+        margin-right: 50px;
+       }
+       .description__chef h3{
+        font-family: 'Josefin Sans';
+        color: aliceblue;
+        letter-spacing: normal;
+        font-weight: lighter;
+        font-size: 25px;
+       }
+       /* COMMENT SECTION */
+       .comment_section h3{
+        font-family: 'Josefin Sans';
+        color: aliceblue;
+        letter-spacing: normal;
+        font-weight: lighter;
+        font-size: 28px;
+        margin-bottom: 50px;
+       }
+        .card___comment{
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .card___comment img{
+            object-fit: cover;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-right: 30px;
+        }
+        .description__comm h4{
+        font-family: 'Josefin Sans';
+        color: aliceblue;
+        letter-spacing: normal;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-bottom: 0px;
+       }
+       p.time_comment {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #ccc;
+        opacity: 1;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+       }
+       p.descript{
+        margin-top: 0px;
+       }
+       .description__comm button{
+        margin-left: 10px;
+        padding: 5px 8px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: aliceblue;
+        letter-spacing: 1px;
+        font-size: 11px;
+        font-weight: bold;
+        /* opacity: 0.4; */
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        text-align: center;
+        border-radius: 10%;
+        transition: all 0.4s ease 0s;
+       }
+       .description__comm button:hover{
+        border: 1px solid rgba(0, 0, 0, 1);;
+        background-color: rgba(0, 0, 0, 1);
+        transition: all 0.4s ease 0s;
+       }
+       #aside1{
+        margin-left: 50px;
+       }
+       #aside2{
+        margin-left: 80px;
+       }
+       #aside3{
+        margin-left: 120px;
+       }
+       /* END OF COMMENT SECTION */
+       .form___wrapper h3{
+        font-family: 'Josefin Sans';
+        color: aliceblue;
+        letter-spacing: normal;
+        font-weight: lighter;
+        font-size: 28px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+       }
+       .form_container{
+        width: 100%;
+        overflow: hidden;
+       }
+       .input-box input {
+       border: 1px solid rgba(0, 0, 0, 0);
+       outline: none;
+       width: 100%;
+       background-color: rgba(0, 0, 0, 0);
+       border-bottom: 1px solid rgba(190, 190, 190, 0.2);
+       }
+       .input-box label{
+        font-size: 15px;
+        opacity: 0.5;
+        color: lightgrey;
+        margin-bottom: 50px;
+       }
+       .input-box textarea {
+       border: 1px solid rgba(0, 0, 0, 0);
+       outline: none;
+       width: 100%;
+       background-color: rgba(0, 0, 0, 0);
+       border-bottom: 1px solid rgba(190, 190, 190, 0.2);
+       }
+       input.input_post {
+       font-size: 13px;
+       height: 55px;
+       width: 150px;
+       background-color: rgb(250, 197, 100);
+       border: 1px solid rgb(250, 197, 100);
+       cursor: pointer;
+       }
+       input.input_post:hover{
+       background-color: rgba(255, 255, 255, 0);
+       border: 1px solid rgb(250, 197, 100);
+       color: rgb(250, 197, 100);
+       cursor: pointer;
+       }
+       .aside{
+        margin-top: 90px;
+       }
+       .search-box{
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(190, 190, 190, 0.2);
+       }
+       input.input-search{
+       border: none;
+       width: 230px;
+       color: lightgrey;
+       font-size: 15px;
+       font-weight: bold;
+       outline: none;
+       background-color: rgba(0, 0, 0, 0);
+       }
+       .search-icon{
+        height: 15px;
+        width: 15px;
+        margin-left: 35px;
+       }
+        /* разобраться с иконкой */
+       .aside h4, .recent___blog h4, div.tag__cloud_2 h4, div.paragraph h4{
+        font-family: 'Josefin Sans';
+        color: aliceblue;
+        letter-spacing: normal;
+        font-weight: lighter;
+        font-size: 18px;
+       }
+       div.categories{
+        margin-top: 80px;
+       }
+       div.categories h4{
+        margin-bottom: 20px;
+       }
+       .categories ul > li{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: lightgrey;
+        opacity: 1;
+        line-height: 28px;
+       }
+       li span{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: lightgrey;
+        opacity: 1;
+        line-height: 28px;
+       }
+       .recent___blog h4{
+        margin: 80px 0 20px 0;
+       }
+       .aside__blog__card{
+        display: flex;
+       }
+       .aside__blog__card img{
+        height: 85px;
+        width: 85px;
+        object-fit: cover;
+        margin-right: 25px;
+        margin-bottom: 50px;
+       }
+       .aside__blog__list .aside__blog__title {
+       color: aliceblue;
+       text-align: left;
+       font-family: 'Josefin Sans';
+       font-size: 16px;
+       letter-spacing: 0.1px;
+       line-height: 1.3;
+       font-weight: lighter;
+       }
+       .aside__blog__list .aside__blog__item span {
+    color: lightgrey;
+    opacity: 0.7;
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1px;
+    margin-right: 4px;
+}
+
+.aside__blog__list .aside__blog__item span#data {
+    background-image: url(img/calendar-icon.png);
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.aside__blog__list .aside__blog__item span#admin {
+    background-image: url(img/human-icon-white.png);
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.aside__blog__list .aside__blog__item span#mssg {
+    background-image: url(img/message-icon-white.png);
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+       div.tag__cloud_2{
+        margin-top: 80px;
+       }
+       div.tag__cloud_2 h4{
+        margin-bottom: 20px;
+       }
+       div.paragraph{
+        margin-top: 80px;
+       }
+       div.paragraph h4{
+        margin-bottom: 20px;
+       }
+       div.paragraph p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: lightgrey;
+        opacity: 0.4;
+        line-height: 28px;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container top-header">       
+            <a href="/" class="logo">
+                <span class="logo_s1">Pizza</span><br><span class="logo_s2">DELICIOUS</span>
+            </a> 
+            <nav>
+                <div class="nav-bar">
+                <button class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Contact</a>
+                </div>
+            </nav>
+            </div>
+    </header>
+    <section class="main">
+        <div class="wrapper">
+            <div class="slide">
+                <img src="img/bg_3.jpg" alt="image" class="image">
+                <div class="image-date_3">
+                <div class="description_3">
+                    <p class="title_2">READ OUR BLOG</p>
+                    <div><span class="subtitle">HOME</span><span class="subtitle">BLOG</span><span class="subtitle">BLOG SINGLE</span></div> 
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+    <div class="main-wrapper">
+    <article class="blog-single">
+        <h2>10 Tips For The Traveler</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae doloremque non officiis corporis rerum? Eos, officiis vel! Velit architecto perspiciatis eum quod ducimus eligendi quaerat, officiis temporibus magni ad numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio omnis totam aliquid provident earum ratione incidunt dolores modi. Ratione blanditiis necessitatibus eius maiores ab natus mollitia hic doloremque illo!</p>
+        <img src="img/image_1.jpg" class="img-food_1" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil labore obcaecati nulla necessitatibus at atque, libero molestiae sapiente blanditiis earum adipisci corrupti autem. Corrupti animi eos dolores debitis et quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, debitis. Debitis sunt in quos, voluptate magni amet quaerat optio tempore nihil mollitia cum odio molestiae laboriosam voluptatem possimus pariatur deserunt? </p>
+        <h2>10 Tips For The Traveler</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae doloremque non officiis corporis rerum? Eos, officiis vel! Velit architecto perspiciatis eum quod ducimus eligendi quaerat, officiis temporibus magni ad numquam.</p>
+        <img src="img/image_2.jpg" class="img-food_2" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil labore obcaecati nulla necessitatibus at atque, libero molestiae sapiente blanditiis earum adipisci corrupti autem. Corrupti animi eos dolores debitis et quas!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti earum eos ipsa quam porro obcaecati enim maxime dolor suscipit at possimus voluptatum nemo aperiam, quae eaque nisi cupiditate? Aperiam, quam!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eaque odit, fugiat error sunt dolore, quia provident consequatur dignissimos, reiciendis a nihil repudiandae optio sint nobis praesentium natus dolorum enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus atque molestiae at officia ad repellendus! Ipsam expedita aspernatur, cumque minus aperiam incidunt deleniti minima asperiores debitis ratione ipsum explicabo.</p>
+        <div class="tag__cloud"><button>LIFE</button><button>SPORT</button><button>TECH</button><button>TRAVEL</button></div>
+        <div class="card___chef">
+            <img src="img/chef_1.jpg" alt="chef">
+            <div class="description__chef">
+                 <h3>Lance Smith</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+            </div>
+        </div>
+        <div class="comment_section">
+            <h3>6 Comments</h3>
+            <div class="card___comment">
+                <img src="img/chef_1.jpg" alt="chef">
+                <div class="description__comm">
+                     <h4>John Doe</h4>
+                     <p class="time_comment">Sept 10,2020 AT 2:21PM</p>
+                     <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+                     <button>REPLY</button>
+                    </div>
+            </div>
+            <div class="card___comment">
+                <img src="img/chef_1.jpg" alt="chef">
+                <div class="description__comm">
+                     <h4>John Doe</h4>
+                     <p class="time_comment">Sept 10,2020 AT 2:21PM</p>
+                     <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+                     <button>REPLY</button>
+                    </div>
+            </div>
+            <div class="card___comment" id="aside1">
+                <img src="img/chef_1.jpg" alt="chef">
+                <div class="description__comm">
+                     <h4>John Doe</h4>
+                     <p class="time_comment">Sept 10,2020 AT 2:21PM</p>
+                     <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+                     <button>REPLY</button>
+                    </div>
+            </div>
+            <div class="card___comment" id="aside2">
+                <img src="img/chef_1.jpg" alt="chef">
+                <div class="description__comm">
+                     <h4>John Doe</h4>
+                     <p class="time_comment">Sept 10,2020 AT 2:21PM</p>
+                     <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+                     <button>REPLY</button>
+                    </div>
+            </div>
+            <div class="card___comment" id="aside3">
+                <img src="img/chef_1.jpg" alt="chef">
+                <div class="description__comm">
+                     <h4>John Doe</h4>
+                     <p class="time_comment">Sept 10,2020 AT 2:21PM</p>
+                     <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+                     <button>REPLY</button>
+                    </div>
+            </div>
+            <div class="card___comment">
+                <img src="img/chef_1.jpg" alt="chef">
+                <div class="description__comm">
+                     <h4>John Doe</h4>
+                     <p class="time_comment">Sept 10,2020 AT 2:21PM</p>
+                     <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus consequatur dignissimos? Tenetur, repudiandae. Commodi, nostrum voluptates labore pariatur ad at dolorum aliquid, ipsum mollitia blanditiis aliquam obcaecati quibusdam?</p>
+                     <button>REPLY</button>
+                    </div>
+            </div>
+        </div>
+        <div class="form___wrapper">
+        <h3>Leave a comment</h3>
+        <form action="#">
+            <div class="form_container">
+                <div class="input-box">
+                   <label for="firstName" class="anim">Name *</label>
+                   <input type="text" id="Name" required> 
+                </div>
+                <div class="input-box">
+                    <label for="lastName" class="anim">Email *</label>
+                    <input type="email" id="Email" required>
+                </div>
+                <div class="input-box">
+                    <label for="subject" class="anim">Website</label>
+                    <input type="text" id="Website" required> 
+                 </div>
+                <div class="input-box">
+                    <label for="message" class="anim">Message</label>
+                    <textarea name="message" id="Message" cols="30" rows="12"></textarea>
+                </div>
+                </div>
+                <input type="submit" value="Post Comment" class="input_post anim">
+        </form>
+    </div>
+    </article>
+    <aside class="aside">
+        <div class="search-box">
+        <input type="text" placeholder="Search..." class="input-search">
+        <img src="img/search-555.svg" alt="search" class="search-icon">
+        </div>
+        <div class="categories">
+        <h4>Categories</h4>
+        <ul>
+            <li>Tour<span>(12)</span></li>
+            <li>Hotel<span>(22)</span></li>
+            <li>Coffee<span>(37)</span></li>
+            <li>Drinks<span>(42)</span></li>
+            <li>Foods<span>(14)</span></li>
+            <li>Travel<span>(140)</span></li>
+        </ul>
+        </div>
+        <div class="recent___blog">
+            <h4>Recent Blog</h4>
+            <div class="aside__blog__card">
+                <img src="img/image_1.jpg" alt="img">
+                <ul class="aside__blog__list">
+                    <li class="aside__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="aside__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+            <div class="aside__blog__card">
+                <img src="img/image_2.jpg" alt="img">
+                <ul class="aside__blog__list">
+                    <li class="aside__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="aside__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+            <div class="aside__blog__card">
+                <img src="img/image_3.jpg" alt="img">
+                <ul class="aside__blog__list">
+                    <li class="aside__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="aside__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="tag__cloud_2">
+                <h4>Tag Cloud</h4>
+                <div><button>DISH</button><button>MENU</button><button>FOOD</button><button>SWEET</button><button>TASTY</button><button>DELICIOUS</button><button>DESSRTS</button><button>DRINKS</button></div>
+            </div>
+            <div class="paragraph">
+                <h4>Paragraph</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi impedit, ex earum odio voluptatum ipsa delectus eum eligendi dicta! Tempora esse perspiciatis dignissimos tenetur exercitationem alias. Similique fugiat alias ab?</p>
+            </div>
+    </aside>
+    </div>
+    </main>
+    <footer>
+        <div class="container footer">
+           <blockquote class="footer__blockquote">
+            <h5>ABOUT US</h5>
+            <p class="footer__blockquote-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <ul class="footer__blockquote-social-list">
+                <li class="footer__blockquote-social-item anim"><a class="footer__blockquote-social-link" target="_blank" href="https://twitter.com/?lang=ua"><img src="img/twitter-white.png" alt="twitter"></a></li>
+                <li class="footer__blockquote-social-item anim"><a class="footer__blockquote-social-link" target="_blank" href="https://uk-ua.facebook.com/"><img src="img/facebook_white.png" alt="facebook"></a></li>
+                <li class="footer__blockquote-social-item anim"><a class="footer__blockquote-social-link" target="_blank" href="https://www.instagram.com/"><img src="img/instagram_white.png" alt="instagram"></a></li>
+            </ul>
+           </blockquote>
+           <div class="footer__blog">
+            <h5>RECENT BLOG</h5>
+            <div class="footer__blog__card">
+                <img src="img/image_1.jpg" alt="img">
+                <ul class="footer__blog__list">
+                    <li class="footer__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="footer__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+            <div class="footer__blog__card">
+                <img src="img/image_2.jpg" alt="img">
+                <ul class="footer__blog__list">
+                    <li class="footer__blog__title">Even the all-powerful Pointing has <br> no control about</li>
+                    <li class="footer__blog__item"><span id="data">Sept 10,2020</span><span id="admin">Admin</span><span id="mssg">19</span></li>
+                </ul>
+            </div>
+           </div>
+           <ul class="footer__services servadapt">
+              <li class="footer__services-title">SERVICES</li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Cooked</a></li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Deliver</a></li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Quality Foods</a></li>
+              <li class="footer__services-item"><a class="footer__services-link" href="#">Mixed</a></li>
+           </ul>
+           <ul class="footer__services adaptive">
+            <li class="footer__services-title">HAVE A QUESTIONS?</li>
+            <li class="footer__services-contacts">
+                <a class="footer__services-adress" target="_blank" href="https://maps.app.goo.gl/yZZcuPe7K9kwqKSP9">203 Fake St.Mountain View, San Francisco, California, USA</a>
+                <a class="footer__services-phone" href="tel:+23923929210">+2 392 3929 210</a>
+                <a class="footer__services-mail" href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </li>
+         </ul>
+        </div>
+    </footer>
+      <script src="jquery-2.0.2.js"></script>
+      <script src="jquery.stellar.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
